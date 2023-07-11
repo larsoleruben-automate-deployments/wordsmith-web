@@ -25,9 +25,9 @@ func main() {
 		WriteTimeout:   10 * time.Minute,
 		MaxHeaderBytes: 0,
 	}
-	http_error := s.ListenAndServe()
-	if http_error != nil {
-		log.Println("Error", http_error)
+	httpError := s.ListenAndServe()
+	if httpError != nil {
+		log.Println("Error", httpError)
 	}
 }
 
