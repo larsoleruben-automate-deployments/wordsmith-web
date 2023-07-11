@@ -11,6 +11,7 @@ import (
 )
 
 func main() {
+	// Seed the random number generator
 	rand.Seed(time.Now().UnixNano())
 
 	fwd := &forwarder{"api", 8080}
