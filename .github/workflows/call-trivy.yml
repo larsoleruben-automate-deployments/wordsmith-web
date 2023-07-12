@@ -7,5 +7,7 @@ jobs:
  scan:
    name: Scan
    uses: larsoleruben-automate-deployments/actions/.github/workflows/reusable-trivy.yml@new-trivy
+   with:
+      image: 'ghcr.io/larsoleruben-automate-deployments/wordsmith-web:latest'
 
 
