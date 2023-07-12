@@ -1,0 +1,13 @@
+name: Call Trivy
+on:
+ push:
+   branches: [main]
+ pull_request:
+jobs:
+ scan:
+   name: Scan
+   uses: larsoleruben-automate-deployments/actions/.github/workflows/reusable-trivy.yml@main
+   with:
+      image: 'ghcr.io/larsoleruben-automate-deployments/wordsmith-web:latest'
+
+
